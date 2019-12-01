@@ -1,0 +1,19 @@
+html {
+    font-size: 8px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media (min-width: 992px) {
+    html {
+        font-size: 10px;
+    }
+}
