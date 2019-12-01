@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/hangman/static/css/main.10fe2b6d.chunk.css",
+    "main.js": "/hangman/static/js/main.6b933113.chunk.js",
+    "main.js.map": "/hangman/static/js/main.6b933113.chunk.js.map",
+    "runtime-main.js": "/hangman/static/js/runtime-main.3a2bf788.js",
+    "runtime-main.js.map": "/hangman/static/js/runtime-main.3a2bf788.js.map",
+    "static/css/2.0624914a.chunk.css": "/hangman/static/css/2.0624914a.chunk.css",
+    "static/js/2.51370224.chunk.js": "/hangman/static/js/2.51370224.chunk.js",
+    "static/js/2.51370224.chunk.js.map": "/hangman/static/js/2.51370224.chunk.js.map",
+    "index.html": "/hangman/index.html",
+    "precache-manifest.58c00e9196a676df6bfec48d6a22e8de.js": "/hangman/precache-manifest.58c00e9196a676df6bfec48d6a22e8de.js",
+    "service-worker.js": "/hangman/service-worker.js",
+    "static/css/2.0624914a.chunk.css.map": "/hangman/static/css/2.0624914a.chunk.css.map",
+    "static/css/main.10fe2b6d.chunk.css.map": "/hangman/static/css/main.10fe2b6d.chunk.css.map",
+    "static/media/kitty-body.png": "/hangman/static/media/kitty-body.61de1d16.png",
+    "static/media/kitty-hand-left.png": "/hangman/static/media/kitty-hand-left.ff076593.png",
+    "static/media/kitty-hand-right.png": "/hangman/static/media/kitty-hand-right.bc0214b8.png",
+    "static/media/kitty-head.png": "/hangman/static/media/kitty-head.3369f4d8.png",
+    "static/media/kitty-leg-left.png": "/hangman/static/media/kitty-leg-left.3721bd29.png",
+    "static/media/kitty-leg-right.png": "/hangman/static/media/kitty-leg-right.8cd9e1f3.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3a2bf788.js",
+    "static/css/2.0624914a.chunk.css",
+    "static/js/2.51370224.chunk.js",
+    "static/css/main.10fe2b6d.chunk.css",
+    "static/js/main.6b933113.chunk.js"
+  ]
+}
