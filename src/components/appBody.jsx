@@ -49,6 +49,8 @@ class appBody extends Component {
             ).length,
             hangmanLength = hangman.length;
 
+        console.log(answer);
+
         chosenLetter.classList.add("-disabled");
 
         if (this.state.chances > 1) {

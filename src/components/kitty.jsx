@@ -14,6 +14,7 @@ const KittyContainer = styled.div`
     max-width: 100%;
     margin: 0 auto;
     margin-bottom: 2rem;
+    border: 1px solid lightpink;
 
     @media (min-width: 768px) {
         width: 30rem;

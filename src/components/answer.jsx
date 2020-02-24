@@ -48,34 +48,47 @@ class Answer extends Component {
         const alphaNumeric = Array.from(
             "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
         );
+        let arrayByWords = this.props.answersList
+            .toString()
+            .trim()
+            .split(" ");
 
-        let answerArray = Array.from(this.props.answersList).map((e, index) => {
-            let letter = alphaNumeric.indexOf(e);
-
-            if (letter > -1) {
-                return (
-                    <LetterSpace
-                        key={`${e} ${index}`}
-                        className={`answerSingleSpacer -${e.toLowerCase()}`}
-                    >
-                        <span>{e}</span>
-                    </LetterSpace>
-                );
-            } else {
-                return (
-                    <BlankSpace key={`${e} ${index}`}>
-                        <span style={{ opacity: "1" }}>{e}</span>
-                    </BlankSpace>
-                );
-            }
+        let arrayByLetters = arrayByWords.map(words => {
+            return (
+                <div style={{ display: "flex", margin: "0 1rem" }}>
+                    {Array.from(words).map((character, index) => {
+                        let letter = alphaNumeric.indexOf(character);
+                        if (letter > -1) {
+                            return (
+                                <LetterSpace
+                                    key={`${character} ${index}`}
+                                    className={`answerSingleSpacer -${character.toLowerCase()}`}
+                                >
+                                    <span>{character}</span>
+                                </LetterSpace>
+                            );
+                        } else {
+                            return (
+                                <BlankSpace key={`${character} ${index}`}>
+                                    <span style={{ opacity: "1" }}>
+                                        {character}
+                                    </span>
+                                </BlankSpace>
+                            );
+                        }
+                    })}
+                </div>
+            );
         });
+        console.log(arrayByLetters);
+
         return (
             <div>
                 <h3 className="text-center mt-5 text-uppercase">
                     What Does Trump Think?
                 </h3>
                 <div className="mb-5">
-                    <BlankSpaceContainer>{answerArray}</BlankSpaceContainer>
+                    <BlankSpaceContainer>{arrayByLetters}</BlankSpaceContainer>
                 </div>
             </div>
         );
